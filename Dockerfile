@@ -10,7 +10,7 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql
 # File::Copy
 # Sys::Hostname
 # Data::Dumper
-RUN apt-get update && apt-get install -y perl --no-install-recommends && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y perl pwgen --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 ENV MYSQL_VERSION 5.5
 
